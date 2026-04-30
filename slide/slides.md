@@ -190,8 +190,8 @@ transition: slide-left
 <div class="mt-4 p-3 bg-gray-800/30 rounded-lg backdrop-blur-sm">
   <h4 class="text-lg font-bold mb-2 text-yellow-300">"Grill Me" Technique:</h4>
   <ul class="space-y-2 text-base">
-    <li>• "Interview me relentlessly about every aspect of this plan until we reach a shared understanding."</li>
-    <li>• Walk down the "design tree" to resolve dependencies one by one</li>
+    <li>"Interview me relentlessly about every aspect of this plan until we reach a shared understanding."</li>
+    <li>Walk down the "design tree" to resolve dependencies one by one</li>
   </ul>
 </div>
 
@@ -253,8 +253,8 @@ transition: slide-left
 <div class="mt-4 p-4 bg-gray-800/30 rounded-lg backdrop-blur-sm">
   <h4 class="text-lg font-bold mb-2 text-teal-300">Implementation:</h4>
   <ul class="space-y-2 text-base">
-    <li>• Create a markdown file of shared terms derived from the domain model</li>
-    <li>• Use these terms in code, conversations with AI, and with domain experts</li>
+    <li>Create a markdown file of shared terms derived from the domain model</li>
+    <li>Use these terms in code, conversations with AI, and with domain experts</li>
   </ul>
 
   <div class="mt-2 p-2 bg-blue-800/20 rounded-lg">
@@ -359,9 +359,9 @@ transition: slide-left
     <div class="text-3xl mb-2">🌊</div>
     <h3 class="text-xl font-bold mb-2 text-red-300">Shallow Modules</h3>
     <ul class="space-y-2 text-base">
-      <li>• Small functionality</li>
-      <li>• Complex interface</li>
-      <li>• Hard for AI to navigate</li>
+      <li>Small functionality</li>
+      <li>Complex interface</li>
+      <li>Hard for AI to navigate</li>
     </ul>
   </div>
 
@@ -369,9 +369,9 @@ transition: slide-left
     <div class="text-3xl mb-2">💎</div>
     <h3 class="text-xl font-bold mb-2 text-green-300">Deep Modules</h3>
     <ul class="space-y-2 text-base">
-      <li>• Lots of functionality</li>
-      <li>• Simple interface</li>
-      <li>• Clear boundaries</li>
+      <li>Lots of functionality</li>
+      <li>Simple interface</li>
+      <li>Clear boundaries</li>
     </ul>
   </div>
 </div>
@@ -464,9 +464,9 @@ transition: slide-left
     <div class="text-3xl mb-2">👤</div>
     <h3 class="text-xl font-bold mb-2 text-blue-300">Human Role</h3>
     <ul class="space-y-2 text-base">
-      <li>• Design the interface</li>
-      <li>• Verify via tests</li>
-      <li>• Focus on architecture</li>
+      <li>Design the interface</li>
+      <li>Verify via tests</li>
+      <li>Focus on architecture</li>
     </ul>
   </div>
 
@@ -474,9 +474,9 @@ transition: slide-left
     <div class="text-3xl mb-2">🤖</div>
     <h3 class="text-xl font-bold mb-2 text-green-300">AI Role</h3>
     <ul class="space-y-2 text-base">
-      <li>• Handle implementation</li>
-      <li>• Inside the "big blob"</li>
-      <li>• Deal with complexity</li>
+      <li>Handle implementation</li>
+      <li>Inside the "big blob"</li>
+      <li>Deal with complexity</li>
     </ul>
   </div>
 </div>
