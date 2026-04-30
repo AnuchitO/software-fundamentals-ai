@@ -347,9 +347,20 @@ layout: quote
   </div>
 </div>
 
+<div class="p-6 rounded-xl border border-yellow-300/30 bg-yellow-900/20 flex items-start mt-6">
+  <img src="/assets/test-driven-development-by-example-beck-kent.jpg" alt="Test Driven Development by Example Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
+  <div>
+    <div class="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-3">Kent Beck — Test Driven Development by Example</div>
+    <p class="text-2xl italic font-semibold">"Invest in the design of the system every day."</p>
+    <p class="text-sm mt-4 opacity-60">→ The "specs to code" movement is the opposite: it <em>divests</em> from system design by ignoring the code entirely. Software fundamentals are the antidote.</p>
+  </div>
+</div>
+
 <!--
 The Pragmatic Programmer's "Outrunning Your Headlights" metaphor maps perfectly onto AI-assisted development.
 Feedback loops — tests passing or failing — are the headlights. TDD keeps the AI within the beam.
+Kent Beck's principle captures the entire thesis of this presentation in a single sentence.
+Daily investment in design — not outsourcing it entirely to AI — is what separates engineers who thrive in the AI age from those who don't.
 -->
 
 ---
@@ -542,22 +553,4 @@ AI serves as the tactical programmer, implementing specific changes and handling
 Success in this new paradigm requires a strong foundation in software fundamentals - these principles are what enable us to leverage AI effectively and create high-impact solutions.
 -->
 
----
-transition: slide-left
-layout: quote
----
-
-<div class="p-6 rounded-xl border border-yellow-300/30 bg-yellow-900/20 flex items-start">
-  <img src="/assets/test-driven-development-by-example-beck-kent.jpg" alt="Test Driven Development by Example Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
-  <div>
-    <div class="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-3">Kent Beck — Test Driven Development by Example</div>
-    <p class="text-2xl italic font-semibold">"Invest in the design of the system every day."</p>
-    <p class="text-sm mt-4 opacity-60">→ The "specs to code" movement is the opposite: it <em>divests</em> from system design by ignoring the code entirely. Software fundamentals are the antidote.</p>
-  </div>
-</div>
-
-<!--
-Kent Beck's principle captures the entire thesis of this presentation in a single sentence.
-Daily investment in design — not outsourcing it entirely to AI — is what separates engineers who thrive in the AI age from those who don't.
--->
 
