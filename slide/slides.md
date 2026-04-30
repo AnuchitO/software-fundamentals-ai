@@ -18,9 +18,9 @@ comark: true
 duration: 35min
 ---
 
-# Software Fundamentals Matter More Than Ever
+# Software Fundamentals: Critical in Today’s AI Age
 
-### Matt Pocock
+###
 
 <span class="text-xl opacity-70">Presentation slides for real engineers in the age of AI</span>
 
@@ -295,7 +295,7 @@ Pocock extends this idea to human-AI collaboration — the same principle preven
 transition: slide-left
 ---
 
-# Tip #3 - TDD (Test-Driven Development)
+# Tip #3 - TDD (Test-Driven Development) & TDG
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
   <div class="p-4 rounded-lg backdrop-blur-sm border border-red-300/20">
@@ -317,7 +317,8 @@ transition: slide-left
 
   <div class="p-3 bg-green-800/20 rounded-lg">
     <h5 class="text-base font-bold mb-1 text-green-300">Practice:</h5>
-    <p class="text-base">Use TDD to force the AI to take small, deliberate steps: <strong>Create a test → Make it pass → Refactor</strong></p>
+    <p class="text-base">Use TDD/TDG to force the AI to take small, deliberate steps: <strong>Create a test → Make it pass → Refactor</strong></p>
+    <p class="text-base mt-2"><strong>TDG Skill:</strong> Leverage <a href="https://github.com/chanwit/tdg" target="_blank" class="text-blue-400 hover:text-blue-300 underline">github.com/chanwit/tdg</a> for Test-Driven Generation</p>
   </div>
 </div>
 
