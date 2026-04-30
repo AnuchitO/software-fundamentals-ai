@@ -100,6 +100,37 @@ Poor code quality creates a barrier to leveraging AI's full potential, making it
 
 ---
 transition: slide-left
+layout: quote
+---
+
+<div class="flex flex-col gap-5">
+  <div class="p-5 rounded-xl border border-blue-300/30 bg-blue-900/20 flex items-start">
+    <img src="/assets/a-philosophy-of-software-design-john-ousterhout.jpg" alt="A Philosophy of Software Design Book Cover" class="w-16 h-20 object-cover mr-4 rounded" />
+    <div>
+      <div class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">📖 A Philosophy of Software Design — John Ousterhout</div>
+      <p class="text-lg italic">"Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system."</p>
+      <p class="text-sm mt-2 opacity-60">→ The definition of bad code used throughout this presentation</p>
+    </div>
+  </div>
+
+  <div class="p-5 rounded-xl border border-orange-300/30 bg-orange-900/20 flex items-start">
+    <img src="/assets/the-pragmatic-programmer-hunt-thomas.jpg" alt="The Pragmatic Programmer Book Cover" class="w-16 h-20 object-cover mr-4 rounded" />
+    <div>
+      <div class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-2">📖 The Pragmatic Programmer — Hunt & Thomas</div>
+      <p class="text-lg italic">Software Entropy: systems tend toward "disaster" and "floating away from each other" when changes ignore the overall design.</p>
+      <p class="text-sm mt-2 opacity-60">→ The force behind degrading AI-generated codebases</p>
+    </div>
+  </div>
+</div>
+
+<!--
+These two books ground the core thesis of the presentation.
+Ousterhout gives us a precise vocabulary for what we're fighting against.
+The Pragmatic Programmer explains why ignoring design inevitably leads to collapse.
+-->
+
+---
+transition: slide-left
 ---
 
 # Garbage In, Garbage Out: AI's Dependency on Quality Code
@@ -173,6 +204,34 @@ The goal is to establish a shared design concept - the invisible theory of what 
 
 ---
 transition: slide-left
+layout: quote
+---
+
+<div class="flex flex-col gap-5">
+  <div class="p-5 rounded-xl border border-purple-300/30 bg-purple-900/20 flex items-start">
+    <img src="/assets/the-design-of-design-frederick-p-brooks.jpg" alt="The Design of Design Book Cover" class="w-16 h-20 object-cover mr-4 rounded" />
+    <div>
+      <div class="text-xs font-bold uppercase tracking-widest text-purple-400 mb-2">📖 The Design of Design — Frederick P. Brooks</div>
+      <p class="text-lg italic">The <strong>design concept</strong> is the "invisible theory" — the ephemeral shared understanding that must exist when more than one party designs something together.</p>
+      <p class="text-sm mt-2 opacity-60">→ What the "Grill Me" technique is building toward</p>
+      <p class="text-sm opacity-60">→ The <strong>design tree</strong> resolves dependencies between decisions one by one during planning</p>
+    </div>
+  </div>
+
+  <div class="p-5 rounded-xl border border-orange-300/30 bg-orange-900/20">
+    <div class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-2">📖 The Pragmatic Programmer — Hunt & Thomas</div>
+    <p class="text-lg italic">"No one knows exactly what they want."</p>
+    <p class="text-sm mt-2 opacity-60">→ The communication barrier between a developer and an AI that "Grill Me" is designed to overcome</p>
+  </div>
+</div>
+
+<!--
+Brooks gives us the theory behind why alignment matters before implementation starts.
+The Pragmatic Programmer explains why requirements are always fuzzy — a reality that applies equally to human-AI communication.
+-->
+
+---
+transition: slide-left
 ---
 
 # Tip #2 - Ubiquitous Language
@@ -208,6 +267,25 @@ Derived from Domain-Driven Design, ubiquitous language ensures consistent termin
 Create a shared glossary document that defines terms from your domain model.
 Using consistent language improves communication with AI, reduces verbosity, and keeps implementation aligned with your plans.
 This shared vocabulary becomes crucial when directing AI to implement specific features.
+-->
+
+---
+transition: slide-left
+layout: quote
+---
+
+<div class="p-6 rounded-xl border border-green-300/30 bg-green-900/20 flex items-start">
+  <img src="/assets/domain-driven-design-eric-evans.jpg" alt="Domain-Driven Design Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
+  <div>
+    <div class="text-xs font-bold uppercase tracking-widest text-green-400 mb-3">📖 Domain-Driven Design — Eric Evans</div>
+    <p class="text-xl italic">"Conversations among developers and expressions of the code and conversations with domain experts are all derived from the same domain model."</p>
+    <p class="text-sm mt-4 opacity-60">→ Applied to AI: a shared markdown glossary anchors the AI's implementation to your plan, reducing drift and verbosity</p>
+  </div>
+</div>
+
+<!--
+Domain-Driven Design coined ubiquitous language as a practice for aligning teams around a shared vocabulary.
+Pocock extends this idea to human-AI collaboration — the same principle prevents the AI from drifting into its own interpretation of your domain.
 -->
 
 ---
@@ -250,6 +328,28 @@ This prevents the AI from "outrunning its headlights" and creating unverifiable 
 
 ---
 transition: slide-left
+layout: quote
+---
+
+<div class="p-6 rounded-xl border border-orange-300/30 bg-orange-900/20 flex items-start">
+  <img src="/assets/the-pragmatic-programmer-hunt-thomas.jpg" alt="The Pragmatic Programmer Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
+  <div>
+    <div class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-3">📖 The Pragmatic Programmer — Hunt & Thomas</div>
+    <p class="text-xl italic">"Outrunning Your Headlights" — going too fast means you can't react to what's ahead in time.</p>
+    <div class="mt-4 p-3 bg-black/20 rounded-lg">
+      <p class="text-lg font-semibold">"The rate of feedback is your speed limit."</p>
+    </div>
+    <p class="text-sm mt-4 opacity-60">→ Applied to AI: don't let it generate more code than you can verify. TDD enforces this constraint.</p>
+  </div>
+</div>
+
+<!--
+The Pragmatic Programmer's "Outrunning Your Headlights" metaphor maps perfectly onto AI-assisted development.
+Feedback loops — tests passing or failing — are the headlights. TDD keeps the AI within the beam.
+-->
+
+---
+transition: slide-left
 ---
 
 # Deep vs. Shallow Modules
@@ -288,7 +388,33 @@ In the AI era, deep modules are preferable because they provide clear boundaries
 Transforming shallow modules into deep ones creates a more testable and maintainable codebase.
 -->
 
+---
+transition: slide-left
+layout: quote
+---
 
+<div class="p-6 rounded-xl border border-blue-300/30 bg-blue-900/20 flex items-start">
+  <img src="/assets/a-philosophy-of-software-design-john-ousterhout.jpg" alt="A Philosophy of Software Design Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
+  <div>
+    <div class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-3">📖 A Philosophy of Software Design — John Ousterhout</div>
+    <p class="text-xl italic"><strong>Deep modules</strong> hide significant functionality behind a simple interface. <strong>Shallow modules</strong> expose a complex interface for little internal functionality.</p>
+    <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+      <div class="p-3 bg-red-900/30 rounded-lg">
+        <p class="font-bold text-red-300 mb-1">Shallow</p>
+        <p class="opacity-70">Complex interface → little power → AI gets lost</p>
+      </div>
+      <div class="p-3 bg-green-900/30 rounded-lg">
+        <p class="font-bold text-green-300 mb-1">Deep</p>
+        <p class="opacity-70">Simple interface → lots of power → AI navigates easily</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+Ousterhout's deep/shallow module framework gives us a concrete target when improving codebase architecture.
+Deep modules are AI-friendly: a simple interface means fewer decisions an AI has to navigate to use a component correctly.
+-->
 
 ---
 transition: slide-left
@@ -410,5 +536,24 @@ In the AI era, the relationship between humans and machines shifts to a strategi
 Humans operate at the strategic level, focusing on design, architecture, and system-wide decisions.
 AI serves as the tactical programmer, implementing specific changes and handling detailed work.
 Success in this new paradigm requires a strong foundation in software fundamentals - these principles are what enable us to leverage AI effectively and create high-impact solutions.
+-->
+
+---
+transition: slide-left
+layout: quote
+---
+
+<div class="p-6 rounded-xl border border-yellow-300/30 bg-yellow-900/20 flex items-start">
+  <img src="/assets/test-driven-development-by-example-beck-kent.jpg" alt="Test Driven Development by Example Book Cover" class="w-20 h-24 object-cover mr-4 rounded" />
+  <div>
+    <div class="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-3">Kent Beck — Test Driven Development by Example</div>
+    <p class="text-2xl italic font-semibold">"Invest in the design of the system every day."</p>
+    <p class="text-sm mt-4 opacity-60">→ The "specs to code" movement is the opposite: it <em>divests</em> from system design by ignoring the code entirely. Software fundamentals are the antidote.</p>
+  </div>
+</div>
+
+<!--
+Kent Beck's principle captures the entire thesis of this presentation in a single sentence.
+Daily investment in design — not outsourcing it entirely to AI — is what separates engineers who thrive in the AI age from those who don't.
 -->
 
