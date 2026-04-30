@@ -218,10 +218,13 @@ layout: quote
     </div>
   </div>
 
-  <div class="p-5 rounded-xl border border-orange-300/30 bg-orange-900/20">
-    <div class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-2">📖 The Pragmatic Programmer — Hunt & Thomas</div>
-    <p class="text-lg italic">"No one knows exactly what they want."</p>
-    <p class="text-sm mt-2 opacity-60">→ The communication barrier between a developer and an AI that "Grill Me" is designed to overcome</p>
+  <div class="p-5 rounded-xl border border-orange-300/30 bg-orange-900/20 flex items-start">
+    <img src="/assets/the-pragmatic-programmer-hunt-thomas.jpg" alt="The Pragmatic Programmer Book Cover" class="w-16 h-20 object-cover mr-4 rounded" />
+    <div>
+      <div class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-2">📖 The Pragmatic Programmer — Hunt & Thomas</div>
+      <p class="text-lg italic">"No one knows exactly what they want."</p>
+      <p class="text-sm mt-2 opacity-60">→ The communication barrier between a developer and an AI that "Grill Me" is designed to overcome</p>
+    </div>
   </div>
 </div>
 
